@@ -20,6 +20,7 @@ public class ArtistView extends VerticalLayout {
     @Autowired
     private WebsitesClient websitesClient;
 
+
     public ArtistView() {
 
         super();
