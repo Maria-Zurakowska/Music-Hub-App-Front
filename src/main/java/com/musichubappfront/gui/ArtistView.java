@@ -4,7 +4,6 @@ import com.musichubappfront.Dto.ResponseDto;
 import com.musichubappfront.client.WebsitesClient;
 import com.vaadin.flow.component.button.Button;
 import com.vaadin.flow.component.dependency.StyleSheet;
-import com.vaadin.flow.component.html.Image;
 import com.vaadin.flow.component.html.Label;
 import com.vaadin.flow.component.icon.Icon;
 import com.vaadin.flow.component.icon.VaadinIcon;
@@ -46,7 +45,7 @@ public class ArtistView extends VerticalLayout {
  //Button button1...
  //Button button2
 
- //HorizontalLayout layout - new HorizontalLayount(button1, button2);
+ //HorizontalLayout layout - new HorizontalLayout(button1, button2);
  //layout.setDefaultVerticalComponentAlignment(Alignment.END);
  //add(layout);
 
@@ -54,8 +53,12 @@ public class ArtistView extends VerticalLayout {
  // .addClickListener(Insert Lambda);
 
 
-        Image image = new Image("/Users/mary_masza/IdeaProjects/music-hub-app-front/src/main/resources/spotify.jpg", "aa");
-        add(textFieldName,buttonName,labelName, image);
+
+        Icon youTubeIcon = new Icon(VaadinIcon.YOUTUBE);
+        youTubeIcon.setSize("100px");
+
+
+        add(textFieldName,buttonName,labelName, youTubeIcon);
 
         this.setJustifyContentMode (JustifyContentMode.CENTER );
         this.setDefaultHorizontalComponentAlignment(Alignment.CENTER);
