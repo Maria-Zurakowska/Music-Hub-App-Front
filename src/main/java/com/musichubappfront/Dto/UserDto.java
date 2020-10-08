@@ -5,6 +5,8 @@ import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 @JsonIgnoreProperties(ignoreUnknown = true)
 public class UserDto {
     private int id;
+    private String firstName;
+    private String lastName;
     private String email;
     private String password;
     private int age;
@@ -12,8 +14,10 @@ public class UserDto {
     private String city;
     private String country;
 
-    public UserDto(int id, String email, String password, int age, String gender, String city, String country) {
+    public UserDto(int id, String firstName, String lastName, String email, String password, int age, String gender, String city, String country) {
         this.id = id;
+        this.firstName = firstName;
+        this.lastName = lastName;
         this.email = email;
         this.password = password;
         this.age = age;
@@ -24,6 +28,14 @@ public class UserDto {
 
     public int getId() {
         return id;
+    }
+
+    public String getFirstName(){
+        return firstName;
+    }
+
+    public String getLastName(){
+        return lastName;
     }
 
     public String getEmail() {
@@ -62,4 +74,5 @@ public class UserDto {
                 ", country='" + country + '\'' +
                 '}';
     }
+
 }
