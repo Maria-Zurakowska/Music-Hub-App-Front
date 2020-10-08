@@ -28,7 +28,7 @@ public class MainView extends VerticalLayout {
                                     //click -> UI.getCurrent().getPage().addDynamicImport("window.open('https://www.google.com')")
                                     //click -> UI.getCurrent().getPage().setLocation("https://www.google.com")
          );
-        add( button);
+        add(button);
         this.setJustifyContentMode (JustifyContentMode.CENTER );
         this.setDefaultHorizontalComponentAlignment(Alignment.CENTER);
         //this.setDefaultVerticalComponentAlignment (Alignment.BASELINE );
