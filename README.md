@@ -25,4 +25,23 @@ This project integrates the backend with the frontend using the Vaadin framework
 
 <img width="607" alt="ArtistView" src="https://user-images.githubusercontent.com/52173865/95447271-c5cdab00-0961-11eb-8a6b-65bb8f66f7d5.png">
 
+*Backend*
+
+Last commit:
+https://github.com/Maria-Zurakowska/Music-Hub-App/blob/master/README.md 
+commit 59d98678147f6e03df514d6230a60b1e9fef0864 (HEAD -> master, origin/master)
+Author: Maria-Zurakowska <maria.zurakowska@gmail.com>
+Date:   Thu Oct 8 12:07:29 2020 +0200
+
+*Frontend*
+
+Last commit:
+https://github.com/Maria-Zurakowska/Music-Hub-App-Front/commit/4a7302b84ee7669478096849d265d47a7d8dfa98 
+commit 4a7302b84ee7669478096849d265d47a7d8dfa98 (HEAD -> master, origin/master)
+Author: Maria-Zurakowska <52173865+Maria-Zurakowska@users.noreply.github.com>
+Date:   Thu Oct 8 12:28:43 2020 +0200
+
+
+
+
 The project still needs some work :-).
