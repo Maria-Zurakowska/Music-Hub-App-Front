@@ -4,6 +4,7 @@
 
 My second individual project -  a frontend side of Music Hub App. 
 This project integrates the backend with the frontend using the Vaadin framework.
+To start the application run the MusicHubApplicationFrontApplication class.
 
 *Main View*
 
