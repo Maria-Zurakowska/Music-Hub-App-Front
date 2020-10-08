@@ -7,6 +7,7 @@ import com.vaadin.flow.component.dependency.StyleSheet;
 import com.vaadin.flow.component.html.Label;
 import com.vaadin.flow.component.icon.Icon;
 import com.vaadin.flow.component.icon.VaadinIcon;
+import com.vaadin.flow.component.orderedlayout.HorizontalLayout;
 import com.vaadin.flow.component.orderedlayout.VerticalLayout;
 import com.vaadin.flow.component.textfield.TextField;
 import com.vaadin.flow.router.Route;
@@ -46,7 +47,7 @@ public class ArtistView extends VerticalLayout {
  //Button button1...
  //Button button2
 
- //HorizontalLayout layout - new HorizontalLayout(button1, button2);
+ //HorizontalLayout layout = new HorizontalLayout(button1, button2);
  //layout.setDefaultVerticalComponentAlignment(Alignment.END);
  //add(layout);
 
@@ -58,10 +59,20 @@ public class ArtistView extends VerticalLayout {
         Icon youTubeIcon = new Icon(VaadinIcon.YOUTUBE);
         youTubeIcon.setSize("100px");
 
+        Icon ticketIcon = new Icon(VaadinIcon.TICKET);
+        ticketIcon.setSize("100px");
 
-        add(textFieldName,buttonName,labelName, youTubeIcon);
+        Icon infoIcon = new Icon(VaadinIcon.INFO_CIRCLE_O);
+        infoIcon.setSize("100px");
 
-        this.setJustifyContentMode (JustifyContentMode.CENTER );
+
+        add(textFieldName,buttonName,labelName);
+
+        HorizontalLayout layout = new HorizontalLayout(youTubeIcon,ticketIcon, infoIcon);
+        layout.setDefaultVerticalComponentAlignment(Alignment.START);
+        add(layout);
+
+        this.setJustifyContentMode (JustifyContentMode.CENTER);
         this.setDefaultHorizontalComponentAlignment(Alignment.CENTER);
     }
 }
